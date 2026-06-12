@@ -375,6 +375,16 @@ function showSecretLetter(){
     Espero que sigamos creando
     recuerdos juntos durante mucho tiempo.
 
+    No he sido alguien perfecto y cometí muchos errores,
+    pero te doy las gracias por seguir a mi lado.
+
+    Espero que podamos mejorar las cosas
+    y seguir compartiendo más momentos juntos.
+
+    Tú eres de lo mejor que me ha pasado.
+    Y puede que no sepa qué vaya a pasar de aquí en adelante,
+    pero espero que podamos seguir juntos.
+
     Te amo.
 
     - Ema ❤️
