@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship v2.2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<canvas id="particles"></canvas>
+
+    <!-- MÚSICA -->
+    <audio id="music" loop>
+        <source src="assets/strategy.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- PANTALLA DE CARGA -->
+    <section id="loader">
+
+        <pre id="terminal"></pre><span class="cursor">█</span>
+
+        <button id="startBtn">[ START ]</button>
+
+    </section>
+
+    <!-- CONTENIDO -->
+    <section id="content" class="hidden">
+
+        <h1>Relationship v2.2 ❤️</h1>
+
+        <div class="stats">
+
+            <h2>Estadísticas</h2>
+
+            <p>Tiempo juntos: 26 meses</p>
+            <p id="liveCounter"></p>
+            <p>Sonrisas generadas: ∞</p>
+            <p>Beso favorito: Obviamente el primero, fue una experiencia única que siempre quedará en mi corazón</p>
+            <p>Nivel de amor: 100%</p>
+
+        </div>
+
+        <h2>7 Fotos que Atesoro de Ti ❤️</h2>
+
+        <div class="memory hidden-card">
+
+            <h3>Memory #01</h3>
+
+            <img src="assets/aniversario.jpg">
+
+            <h4>Fotito Bajo la Lluvia ❤️</h4>
+
+            <p>
+                Esta foto es de nuestro primer aniversario juntos. Aún recuerdo a dónde fuimos a comer :p
+                Puede que no hiciéramos demasiado, pero yo disfruté bastante este día.
+            </p>
+
+        </div>
+
+        <div class="memory hidden-card">
+
+            <h3>Memory #02</h3>
+
+            <img src="assets/diva.jpg">
+
+            <h4>La Más Hermosa ❤️</h4>
+
+            <p>
+                Eres la única diva de mi corazón, la más bella y divina. No lo olvides c:
+            </p>
+
+        </div>
+
+        <div class="memory hidden-card">
+
+            <h3>Memory #03</h3>
+
+            <img src="assets/fiesta.jpg">
+
+            <h4>Tú en la Naturaleza ❤️</h4>
+
+            <p>
+                Me gustó bastante esta foto, resalta lo bien que te ves y lo bonita que eres.
+                Me hubiera gustado estar ahí.
+            </p>
+
+        </div>
+
+        <div class="memory hidden-card">
+
+            <h3>Memory #04</h3>
+
+            <img src="assets/mapache.jpg">
+
+            <h4>Tu Animal Interior ❤️</h4>
+
+            <p>
+                Por su pollo no podía faltar tu versión hermitaña. Tu mapache interior. 
+                Una de mis versiones favoritas porque te ves chistosa jajajaja
+            </p>
+
+        </div>
+
+        <div class="memory hidden-card">
+
+            <h3>Memory #05</h3>
+
+            <img src="assets/parlanchina.jpg">
+
+            <h4>Mi Parlanchina Favorita ❤️</h4>
+
+            <p>
+                Y claro, obviamente tú eres mi parlanchina.
+                De vez en cuando hablas mucho, pero no me molesta.
+                Es entretenido escucharte hablar.
+            </p>
+
+        </div>
+
+        <div class="memory hidden-card">
+
+            <h3>Memory #06</h3>
+
+            <img src="assets/payaso.jpg">
+
+            <h4>Cosplayer de Corazón ❤️</h4>
+
+            <p>
+                No hay que olvidar que también me haces reír mucho con tus bromas.
+                También con tus maquillajes exóticos.
+            </p>
+
+        </div>
+
+        <div class="memory hidden-card">
+
+            <h3>Memory #07</h3>
+
+            <img src="assets/vestido.jpg">
+
+            <h4>Preciosa ❤️</h4>
+
+            <p>
+                Ese vestido se te veía precioso. El rojo te queda muy bonito.
+                Aunque no pude estar allí sé que habrán aún más momentos así para compartir.
+            </p>
+
+        </div>
+
+        <div class="final-message">
+
+            <pre>
+Perdona por lo borroso de las fotos, intenté que se vieran más claras y mejor pero no pude :c
+Mejoraré para la próxima
+
+
+> print(feelings)
+
+Gracias por acompañarme estos 2 años y 2 meses.
+
+Gracias por todas las risas,
+los abrazos,
+los momentos buenos
+y también por los difíciles.
+
+Cada día contigo ha valido la pena.
+
+Te amo ❤️
+
+- Ema
+            </pre>
+
+        </div>
+
+        <button id="futureBtn">
+            Ejecutar futuro_juntos()
+        </button>
+
+        <div id="question" class="hidden">
+
+            <h2>¿Quieres seguir conmigo?</h2>
+
+            <button onclick="choose('si')">
+                Sí ❤️
+            </button>
+
+            <button onclick="choose('superSi')">
+                Claro que sí ❤️
+            </button>
+
+            <button onclick="choose('no')">
+                No 🥺
+            </button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

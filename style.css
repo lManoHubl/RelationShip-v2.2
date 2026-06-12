@@ -1,0 +1,129 @@
+body {
+    background: #000;
+    color: #00ff00;
+    font-family: Consolas, monospace;
+    margin: 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.cursor{
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+#loader {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#startBtn{
+    display:none;
+}
+
+#particles{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+#terminal {
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+}
+
+button {
+    background: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+
+    padding: 12px 20px;
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #00ff00;
+    color: black;
+}
+
+img {
+    width: 80%;
+    max-width: 500px;
+
+    border-radius: 15px;
+}
+
+.memory {
+    margin: 60px 0;
+}
+
+.stats {
+    border: 1px solid #00ff00;
+
+    width: 80%;
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 20px;
+}
+
+.final-message {
+    margin: 80px 0;
+}
+
+#result img {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.fadeOut{
+    opacity:0;
+    transition:1s;
+}
+
+.fadeIn{
+    animation:fadeIn 1s;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+.hidden-card{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.show-card{
+    opacity:1;
+    transform:translateY(0);
+}
